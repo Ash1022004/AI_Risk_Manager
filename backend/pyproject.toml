@@ -1,0 +1,29 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Agentic merchant risk reviewer"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.116.0",
+    "uvicorn[standard]>=0.35.0",
+    "pydantic-settings>=2.10.0",
+    "httpx>=0.28.0",
+    "redis>=6.0.0",
+    "groq>=0.31.0",
+    "lightgbm>=4.6.0",
+    "scikit-learn>=1.7.0",
+    "pandas>=2.2.0",
+    "numpy>=2.0.0",
+    "pyarrow>=20.0.0",
+    "kaggle>=2.2.4",
+    "python-dotenv>=1.1.0",
+    "grok>=6.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app", "ml", "agent"]

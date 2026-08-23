@@ -1,0 +1,22 @@
+{
+  "features": [
+    "kyc_mismatch_rate",
+    "volume_spike",
+    "chargeback_ratio",
+    "ticket_amt_mean",
+    "ticket_amt_std",
+    "ticket_amt_p95",
+    "txn_count",
+    "device_anomaly",
+    "ip_geo_anomaly",
+    "email_risk",
+    "product_mix_entropy",
+    "unique_devices",
+    "unique_emails"
+  ],
+  "source": "synthetic",
+  "scaled": true,
+  "auc": 0.9355749999999998,
+  "n_rows": 4000,
+  "positive_rate": 0.2505
+}
