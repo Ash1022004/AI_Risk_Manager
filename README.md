@@ -8,6 +8,20 @@ Merchant submit → FastAPI → Redis Cloud queue → worker (LightGBM + SHAP-st
 
 XGBoost/LightGBM is the scorer. The LLM is the reviewer, not the ranker. Policy is a hard guardrail: the agent cannot approve through a hard-fail rule.
 
+## 🚀 Live Demo
+
+The project is deployed and available for testing.
+
+| Service | Platform | Link |
+|---------|----------|------|
+| Frontend Dashboard | Vercel | [Open AI Risk Manager](https://ai-risk-manager-nine.vercel.app) |
+| Backend API | Render | [Open API](https://ai-risk-manager-3rkh.onrender.com) |
+| API Documentation | FastAPI Swagger | [View API Docs](https://ai-risk-manager-3rkh.onrender.com/docs) |
+| Backend Health Check | Render | [Check Health](https://ai-risk-manager-3rkh.onrender.com/health) |
+
+---
+
+
 ## One-time setup
 
 Keys live in `backend/.env` (never commit it): Groq, Redis Cloud, Supabase URL + secret key, optional Kaggle token.
